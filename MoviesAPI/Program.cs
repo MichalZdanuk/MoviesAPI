@@ -18,7 +18,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 builder.Services.AddScoped<MovieService>();
-builder.Services.AddScoped<IMovieService, MovieServiceCacheDecorator>();
+builder.Services.AddScoped<MovieServiceCacheDecorator>();
+builder.Services.AddScoped<IMovieService, MovieServiceLoggingDecorator>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
