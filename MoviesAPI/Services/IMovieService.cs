@@ -1,5 +1,4 @@
 ﻿using MoviesAPI.DTOs;
-using MoviesAPI.Entities;
 
 namespace MoviesAPI.Services
 {

@@ -18,6 +18,8 @@ builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<IMovieService,  MovieService>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
+builder.Services.AddMemoryCache();
+
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
