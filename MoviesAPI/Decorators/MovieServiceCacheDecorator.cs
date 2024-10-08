@@ -6,10 +6,10 @@ namespace MoviesAPI.Decorators
 {
     public class MovieServiceCacheDecorator : IMovieService
     {
-        private readonly MovieService _movieService;
+        private readonly IMovieService _movieService;
         private readonly IMemoryCache _cache;
 
-        public MovieServiceCacheDecorator(MovieService movieService,
+        public MovieServiceCacheDecorator(IMovieService movieService,
             IMemoryCache cache)
         {
             _movieService = movieService;

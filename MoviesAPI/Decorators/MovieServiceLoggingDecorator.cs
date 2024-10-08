@@ -5,10 +5,10 @@ namespace MoviesAPI.Decorators
 {
     public class MovieServiceLoggingDecorator : IMovieService
     {
-        private readonly MovieServiceCacheDecorator _service;
+        private readonly IMovieService _service;
         private readonly ILogger<MovieServiceLoggingDecorator> _logger;
 
-        public MovieServiceLoggingDecorator(MovieServiceCacheDecorator service,
+        public MovieServiceLoggingDecorator(IMovieService service,
             ILogger<MovieServiceLoggingDecorator> logger)
         {
             _service = service;
