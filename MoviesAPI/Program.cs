@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MoviesAPI.DAL;
 using MoviesAPI.Data;
+using MoviesAPI.Decorators;
 using MoviesAPI.Repositories;
 using MoviesAPI.Services;
 using System.Reflection;
@@ -15,7 +16,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
-builder.Services.AddScoped<IMovieService,  MovieService>();
+
+builder.Services.AddScoped<MovieService>();
+builder.Services.AddScoped<IMovieService, MovieServiceCacheDecorator>();
+
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 builder.Services.AddMemoryCache();
