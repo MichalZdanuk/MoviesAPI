@@ -4,7 +4,7 @@ This repository demonstrates the usage of the **Decorator Pattern** in a simple 
 
 ---
 
-## Stages of Implementation
+## 🚀 Stages of Implementation
 
 ### **Stage 1: Initial Implementation Without Decorators**  
 A basic API implementation is introduced, without any decorators.  
@@ -28,14 +28,14 @@ The code is refactored to use the **Scrutor** library, simplifying dependency in
 
 ---
 
-## Presentation
+## 📑 Presentation
 
 For a detailed explanation of the implementation process and design choices, refer to the PDF presentation:  
 [**Decorator Pattern Presentation by Michał Żdanuk**](https://github.com/MichalZdanuk/MoviesAPI/blob/master/dekorator_Micha%C5%82_%C5%BBdanuk.pdf)
 
 ---
 
-## Inspiration
+## 💡 Inspiration
 
 Idea of implemenation and clean way of implementation was inspired by:
 [DevMentors Video](https://www.youtube.com/watch?v=7szQgVWyoPc&ab_channel=DevMentors)
